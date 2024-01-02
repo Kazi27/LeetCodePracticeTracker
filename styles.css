@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d5cbf4;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #190a6b;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #9ac9e8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #c5d0eb;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    text-decoration: none;
+    color: #0d549a;
+}
+
+.card a:hover {
+    color: #5081b2;
+}

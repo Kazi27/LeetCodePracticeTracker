@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d5cbf4;
+    margin: 0;
+    padding: 0;
+    color: #190a6b;
+}
+
+h1 {
+    text-align: center;
+    color: #190a6b;
+}
+
+h2 {
+    color: #3720b5;
+    margin: 10px; 
+}
+
+h3 {
+    color: #342874;
+    margin: 10px;
+}
+
+p1 {
+    color: #5081b2;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 18px;
+}
+
+pre {
+    background-color: #c5d0eb;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    transition: box-shadow 0.3s;
+}
+
+pre:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+code.language-cpp {
+    color: #042a4f; /* Code color */
+    font-family: 'Courier New', monospace; /* Use monospace font for code */
+}
+
+a {
+    color: #0d549a; /* Link color */
+}
+
+a:hover {
+    color: #5081b2; /* Link color on hover */
+}
