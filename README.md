@@ -1,6 +1,6 @@
 # LeetCodePracticeTracker
 
-This repository serves as a showcase of my solutions to common LeetCode problems, complete with explanations. The deployed site is accessible [here](https://kazi27.github.io/leetcodePractice/). As time goes on, the site will contain more of my solutions, explanations and resources I use to prepare for my technical interviews and assessments.
+This repository serves as a showcase of my solutions to common LeetCode problems, complete with explanations. The deployed site is accessible [here](https://kazi27.github.io/LeetCodePracticeTracker/). As time goes on, the site will contain more of my solutions, explanations and resources I use to prepare for my technical interviews and assessments.
 
 ## Overview
 
