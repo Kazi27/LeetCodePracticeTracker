@@ -31,3 +31,6 @@ public:
         return false; //if ur here it means you checked it all and there are no duplicates
     }
 };
+
+// Time Complexity:
+// The time complexity for std::sort is O(n log n) and then the loop runs n times. So overall it takes O(n log n)

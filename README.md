@@ -10,7 +10,7 @@ I wanted to always have my solutions to the problems available at a glance whene
 
 ### Features
 
-- **Problem and Solution Display**: Each page on the website features a problem statement along with a C++ solution. The solutions come with detailed explanations to help users (mainly just me and my friends) understand the thought process.
+- **Problem and Solution Display**: Each page on the website features a problem statement along with a C++ solution. The solutions come with detailed explanations to help users (mainly just me and my friends) understand the thought process and also time complexities and why they are what they are.
 
 - **Syntax Highlighting**: The website employs Prism.js and CSS for syntax highlighting in the C++ code snippets, enhancing code readability and presentation.
 
