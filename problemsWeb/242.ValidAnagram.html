@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="problems.css"> 
+    <link rel="stylesheet" href="prism.css">
+    <script defer src="prism.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>LeetCode - Contains Duplicates</title>
+    <script>
+        $(document).ready(function () {
+            $.get('../problemsCpp/242.ValidAnagram.cpp', function (data) {
+                $('#cpp-code').text(data);
+                Prism.highlightAll();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>
+        Problem: 
+    </h1>
+    
+    <h2>
+        Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+        An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+    </h2>
+    
+    <h3>Example 1: </h3>
+    <p1>Input: s = "anagram", t = "nagaram" </p1> 
+    <br> 
+    <p1>Output: true</p1> 
+    
+    <h3>Example 2: </h3>
+    <p1>Input: s = "rat", t = "car" </p1>
+    <br> 
+    <p1>Output: false</p1>
+    
+    <h1>Solution:</h1>
+    <pre>
+        <code id="cpp-code" class="language-cpp"></code>
+    </pre>
+</body>
+</html>

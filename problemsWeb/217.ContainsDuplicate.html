@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="solutions.css"> 
+    <link rel="stylesheet" href="problems.css"> 
     <link rel="stylesheet" href="prism.css">
     <script defer src="prism.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>LeetCode - Contains Duplicates</title>
     <script>
         $(document).ready(function () {
-            $.get('problems/217.ContainsDuplicate.cpp', function (data) {
+            $.get('../problemsCpp/217.ContainsDuplicate.cpp', function (data) {
                 $('#cpp-code').text(data);
                 Prism.highlightAll();
             });
