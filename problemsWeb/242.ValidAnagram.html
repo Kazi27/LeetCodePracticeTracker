@@ -16,6 +16,16 @@
             });
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $.get('../problemsPy/242.ValidAnagram.py', function (data) {
+                $('#python-code').text(data);
+                Prism.highlightAll();
+            });
+        });
+    </script>
+
 </head>
 <body>
     <h1>
@@ -23,23 +33,22 @@
     </h1>
     
     <h2>
-        Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-        An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+        <a href="https://leetcode.com/problems/contains-duplicate/"> Problem Link </a>
     </h2>
     
-    <h3>Example 1: </h3>
-    <p1>Input: s = "anagram", t = "nagaram" </p1> 
-    <br> 
-    <p1>Output: true</p1> 
+    <h3>
+        Resources: N/A
+    </h3>
     
-    <h3>Example 2: </h3>
-    <p1>Input: s = "rat", t = "car" </p1>
-    <br> 
-    <p1>Output: false</p1>
-    
-    <h1>Solution:</h1>
+    <h1>Solution in C++:</h1>
     <pre>
         <code id="cpp-code" class="language-cpp"></code>
     </pre>
+
+    <h1>Solution in python:</h1>
+    <pre>
+        <code id="python-code" class="language-python"></code>
+    </pre>
+
 </body>
 </html>

@@ -12,11 +12,13 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     color: #3720b5;
     margin: 10px; 
 }
 
 h3 {
+    text-align: center;
     color: #342874;
     margin: 10px;
 }
@@ -42,6 +44,11 @@ pre:hover {
 }
 
 code.language-cpp {
+    color: #042a4f; /* Code color */
+    font-family: 'Courier New', monospace; /* Use monospace font for code */
+}
+
+code.language-py {
     color: #042a4f; /* Code color */
     font-family: 'Courier New', monospace; /* Use monospace font for code */
 }
