@@ -42,4 +42,4 @@ class Solution:
 
 # Time Complexity:
 # We are guaranteeing that by the time we reach the second element in the pair (which matches the diff) that our pair is complete because the diff plus the index ur currently at gives you the target
-# So we just need O(n) time to accomplish this because we only iterate through the array once
+# So we just need O(n) time to accomplish this because we only iterate through the array once 
