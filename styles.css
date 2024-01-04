@@ -8,7 +8,7 @@ body {
 .navbar {
     background-color: #190a6b;
     overflow: hidden;
-    text-align: center; /* Center the items in the navbar */
+    text-align: center; /*center items in navbar */
 }
 
 .nav-item {
@@ -24,6 +24,10 @@ body {
     background-color: #5e5596;
 }
 
+.nav-item.active {
+    background-color: #5e5596;
+}
+
 h1{
     color: #190a6b;
     text-align: center;
@@ -32,6 +36,12 @@ h1{
 h2{
     color: #2e0ee1;
     text-align: center;
+}
+
+h3{
+    color: #100550;
+    text-align: center;
+    padding: 5px;
 }
 
 .easycontainer {
@@ -78,4 +88,8 @@ h2{
 
 .card a:hover {
     color: #5081b2;
+}
+
+a:hover {
+    color: #252ab1; /* Link color on hover */
 }

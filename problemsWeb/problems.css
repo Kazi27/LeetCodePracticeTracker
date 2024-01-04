@@ -6,6 +6,29 @@ body {
     color: #190a6b;
 }
 
+.navbar {
+    background-color: #190a6b;
+    overflow: hidden;
+    text-align: center; /*center items in navbar */
+}
+
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: #cdd0e1;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    background-color: #5e5596;
+}
+
+.nav-item.active {
+    background-color: #5e5596;
+}
+
 h1 {
     text-align: center;
     color: #190a6b;
@@ -44,19 +67,19 @@ pre:hover {
 }
 
 code.language-cpp {
-    color: #042a4f; /* Code color */
-    font-family: 'Courier New', monospace; /* Use monospace font for code */
+    color: #042a4f; /*cpp code color */
+    font-family: 'Courier New', monospace; /*monospace font for code */
 }
 
 code.language-py {
-    color: #042a4f; /* Code color */
-    font-family: 'Courier New', monospace; /* Use monospace font for code */
+    color: #042a4f; /*py code color */
+    font-family: 'Courier New', monospace; /*monospace font for code */
 }
 
 a {
-    color: #0d549a; /* Link color */
+    color: #0d549a; /*link color */
 }
 
 a:hover {
-    color: #5081b2; /* Link color on hover */
+    color: #252ab1; /*link color on hover */
 }
