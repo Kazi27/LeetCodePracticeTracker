@@ -1,33 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const originalText = "My LeetCode Solutions";
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let interval = null;
+    const originalTextMap = {};
   
-    const h1Element = document.querySelector("h1[data-value='hackerEffect']");
-    
-    h1Element.onmouseover = event => {  
-      let iteration = 0;
-      
-      clearInterval(interval);
-      
-      interval = setInterval(() => {
-        h1Element.innerText = h1Element.innerText
-          .split("")
-          .map((letter, index) => {
-            if(index < iteration) {
-              return originalText[index];
-            }
-          
-            return letters[Math.floor(Math.random() * 26)]
-          })
-          .join("");
-        
-        if(iteration >= originalText.length){ 
-          clearInterval(interval);
-        }
-        
-        iteration += 1 / 3;
-      }, 30);
+    function applyHackerEffect(element, originalText) {
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let interval = null;
+  
+      element.onmouseover = () => {
+        let iteration = 0;
+  
+        clearInterval(interval);
+  
+        interval = setInterval(() => {
+          element.innerText = element.innerText
+            .split("")
+            .map((letter, index) => {
+              if (index < iteration) {
+                return originalText[index];
+              }
+  
+              return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
+  
+          if (iteration >= originalText.length) {
+            clearInterval(interval);
+          }
+  
+          iteration += 1;
+        }, 30);
+      };
     }
+  
+    document.querySelectorAll('.card h3').forEach((h3Element) => {
+      const originalText = h3Element.innerText;
+      originalTextMap[h3Element] = originalText;
+      applyHackerEffect(h3Element, originalText);
+    });
   });
   
