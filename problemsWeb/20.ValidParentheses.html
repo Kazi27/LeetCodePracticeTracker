@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="problems.css"> 
+    <link rel="stylesheet" href="prism.css">
+    <script defer src="prism.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>LeetCode - Valid Parentheses</title>
+
+    <script>
+        $(document).ready(function () {
+            $.get('../problemsPy/20.ValidParentheses.py', function (data) {
+                $('#python-code').text(data);
+                Prism.highlightAll();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <script src="navbar1.js"></script>
+    <h1>
+        Problem: 
+    </h1>
+    
+    <h2>
+        <a href="https://leetcode.com/problems/valid-parentheses/"> Problem Link </a>
+    </h2>
+    
+    <h3>
+        Resources:<a href="https://youtu.be/WTzjTskDFMg?si=0JqEs_omLu6g8H0T"> Neetcode.io Video </a>
+    </h3>
+
+    <h1>Solution in python:</h1>
+    <pre>
+        <code id="python-code" class="language-python"></code>
+    </pre>
+
+</body>
+</html>
