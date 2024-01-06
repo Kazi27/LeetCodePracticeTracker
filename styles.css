@@ -29,9 +29,14 @@ body {
 }
 
 h1{
-    color: #190a6b;
+    font-family: 'Space Mono', monospace;
+    color: #3c22cf;
     text-align: center;
 }
+
+h1:hover {
+    color: #7c66bd;
+} 
 
 h2{
     color: #2e0ee1;
