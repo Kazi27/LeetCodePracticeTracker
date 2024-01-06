@@ -12,13 +12,19 @@
 # Output: False
 
 # Solution:
+# This solution is in python3
 class Solution(object):
     def isAnagram(self, s, t):
-        """
+        newS = sorted(s)
+        newT = sorted(t)
+        if newT == newS:
+            return True
+        return False
+        """Below is solution in outdated python, does the same thing as above
         :type s: str
         :type t: str
         :rtype: bool
-        """
+        
         if len(s) == len(t):  # Base condition, all anagrams will have the same length
             sorted_s = sorted(s)
             sorted_t = sorted(t)  # Sort both strings; all anagrams, when sorted, will result in equivalent strings
@@ -27,6 +33,7 @@ class Solution(object):
                 return True  # Strings match after sorting
 
         return False  # If you reach here, s and t are not anagrams
+        """
 
 # Time Complexity:
 # The time complexity for sorting is O(n log n), and then you're sorting both strings so O(n log n) twice which generalizes to O(n log n)

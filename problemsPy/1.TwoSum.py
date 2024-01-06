@@ -20,7 +20,25 @@
 # Solution:
 from typing import List
 
-class Solution:
+#enumerate in python gives you both index and value
+#for x in range(len(blah)) increments x and blah[x] gives u valie
+#for x in nums makes x take on the value in numsthen x++ like print (x)
+#to initialize a hashmap its just num_map = {}
+#to insert something at a specific key hashmap[key] = value
+#for us we are storing the INDICES for the values in nums as values and the keys are the actual VALUES in nums
+#easier one tbh
+
+class Solution1:
+    def twoSum(self, nums: List[int], target: int) -> List[int]: 
+         hashmap = {} #initialize
+         for x in range(len(nums)): #go thru all of nums
+            diff = target - nums[x] #calc the complement which is the number that when added to nums[x] will give u the target
+            if diff in hashmap: #if the complement is in the hashmap u just wanna return the index its at which u do by wrapping it in []
+                 return [x, hashmap[diff]] #hashmap[diff] gives u the value at the diff index but remember, the value ISSS the index, the x is also the index so ur returning 2 indices that have valeus that when added, give you the target
+            hashmap[nums[x]] = x #if ur here, the complement is not in the hashmap so add it, nums[x] is the key, x is the value cause syntax is hash[key] = value (ur value is the index)
+
+#another one using enumerate
+class Solution2:
     def twoSum(self, nums: List[int], target: int) -> List[int]: 
     #def is to define a func in python
     #twoSum is func name
