@@ -98,3 +98,20 @@ h3{
 a:hover {
     color: #252ab1; /* Link color on hover */
 }
+
+:root {
+    --glow-rgb: 239 42 201;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .glow-point {
+    position: absolute;
+    box-shadow: 0rem 0rem 1.2rem 0.6rem rgb(var(--glow-rgb));
+    pointer-events: none;
+  }

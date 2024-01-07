@@ -83,3 +83,20 @@ a {
 a:hover {
     color: #252ab1; /*link color on hover */
 }
+
+:root {
+    --glow-rgb: 64 181 173;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .glow-point {
+    position: absolute;
+    box-shadow: 0rem 0rem 1.2rem 0.6rem rgb(var(--glow-rgb));
+    pointer-events: none;
+  }
