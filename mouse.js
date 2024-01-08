@@ -106,25 +106,35 @@ const adjustLastMousePosition = position => {
   }
 };
 
-const handleOnMove = e => {
-  const mousePosition = { x: e.clientX, y: e.clientY }
-  
+const getMousePosition = (e) => {
+  const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+  return { x: e.clientX + scrollX, y: e.clientY + scrollY };
+};
+
+const handleOnMove = (e) => {
+  const mousePosition = getMousePosition(e);
+
   adjustLastMousePosition(mousePosition);
-  
-  const now = new Date().getTime(),
-        hasMovedFarEnough = calcDistance(last.starPosition, mousePosition) >= config.minimumDistanceBetweenStars,
-        hasBeenLongEnough = calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
-  
-  if(hasMovedFarEnough || hasBeenLongEnough) {
+
+  const now = new Date().getTime();
+  const hasMovedFarEnough =
+    calcDistance(last.starPosition, mousePosition) >=
+    config.minimumDistanceBetweenStars;
+  const hasBeenLongEnough =
+    calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
+
+  if (hasMovedFarEnough || hasBeenLongEnough) {
     createStar(mousePosition);
-    
+
     updateLastStar(mousePosition);
   }
-  
+
   createGlow(last.mousePosition, mousePosition);
-  
+
   updateLastMousePosition(mousePosition);
-}
+};
 
 window.onmousemove = e => handleOnMove(e);
 
