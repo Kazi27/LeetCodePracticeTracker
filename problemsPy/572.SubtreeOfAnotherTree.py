@@ -21,3 +21,34 @@ class TreeNode:
 class Solution:
     from typing import Optional
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not subRoot: #if the subtree is null, null is a subtree of all trees so return true
+            return True
+
+        if not root: #if the tree is null itself, it can't have subtrees so return false
+            return False
+
+        z = self.isSameTree(root, subRoot) #if they are the same tree, subroot is a subtree of the root so return true
+        if z:
+            return True
+
+        a = self.isSubtree(root.left, subRoot) #recursive call checking if subroot is a subtree of the left or right subtree of root
+        b = self.isSubtree(root.right, subRoot)
+        if a or b:
+            return True
+
+        return False #if ur here, none of the if statements executed so false
+        
+    def isSameTree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not root and not subRoot: #if both trees are null, they are the same
+            return True
+        
+        if not root or not subRoot: #if one of the trees are null but the other isnt, they are not the same
+            return False
+        
+        if root.val == subRoot.val: #so if ur here, both trees exist, and if the values match then
+            x = self.isSameTree(root.left, subRoot.left) #check values of their left and right children
+            y = self.isSameTree(root.right, subRoot.right) #do this recursively for all nodes
+            if x and y: #if their children values also match return true
+                return True
+        
+        return False #if ur here the trees exist but values do not match so return false
