@@ -30,5 +30,6 @@ class Solution:
 
         return one
     
-# Time Complexity:
+# Complexities:
 # Time complexity for this dynamic programming solution is O(n) because the for loop runs for n times
+# Space complexity is O(1) because no data structures are being utilized, just variables

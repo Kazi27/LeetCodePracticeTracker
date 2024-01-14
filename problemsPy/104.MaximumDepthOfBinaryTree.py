@@ -28,5 +28,6 @@ class Solution:
         rightD = self.maxDepth(root.right) #same as above
         return max(leftD, rightD) + 1 #get the max of both subtrees and add one for the node you're currently at
     
-# Time Complexity:
-# O(n) because we visit each node exactly once, space would be O(h) where h is the height of the tree but in balanced binary tree the height is log n so it'd be O(log n)
+# Complexities:
+# Time complexity would be O(n) because we visit each node exactly once
+# Space complexity would be O(h) where h is the height of the tree but in balanced binary tree the height is log n so it'd be O(log n)

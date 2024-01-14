@@ -43,5 +43,6 @@ class Solution:
         if len(stack) == 0:
             return True #if it is then valid parenthesis
         
-# Time Complexity:
-# O(n) because we are going through each input character once, memory/space complexity is also  O(n) because stack could be of size n
+# Complexities:
+# For time complexity it would be O(n) because we are going through each input character once, 
+# For memory/space complexity it would also be O(n) because stack could be of size n

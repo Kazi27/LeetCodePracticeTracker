@@ -35,5 +35,6 @@ class Solution(object):
         return False  # If you reach here, it means you checked it all, and there are no duplicates
         """
 
-# Time Complexity:
+# Complexities:
 # The time complexity for sorting is O(n log n), and then the loop runs n times. Overall, it takes O(n log n)
+# The space complexity os O(1) because no extra data structures and sorting is done in place, same amount of space regardless of the size of nums

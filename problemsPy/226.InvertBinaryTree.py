@@ -37,6 +37,6 @@ class Solution:
         self.invertTree(root.right) #recursive call on the root of the left subtree
         return root #now the whole tree is inverted
     
-# Time Complexity:
-# O(n) because we are traversing all n nodes in each recursive call
-# O(h) is the memory complexity because we are feeding in the root of each subtree each recursive call, if tree is balanced its O(log n) tho but worst case its a linked list or skewed
+# Complexities:
+# The time complexity is O(n) because we are traversing all n nodes in each recursive call
+# The memory complexity is O(h) because we are feeding in the root of each subtree each recursive call, if tree is balanced its O(log n) tho but worst case its a linked list or skewed

@@ -41,8 +41,9 @@ class Solution:
                 return True
         return False #u do not have a cycle
     
-# Time Complexity:
-# For this optimal soultion, we use two pointers no data structs so we don't use extra memory so memory is O(1) with time complexity being O(n) because you have to traverse all n nodes
+# Complexities:
+# Time complexity is O(n) because you have to traverse all n nodes
+# For space complexity, in this optimal soultion we use two pointers no data structs so we don't use extra memory so memory is O(1) 
 # If we used a hashmap memory complexity would be O(n) because potentially every node would be on the hashmap, the way you'd do this is
 # youd have every visited node in the hashmap and then in one of the checks you do you're gonna check if the node thats next is already in the hashmap
 # if it is you have a cycle. Hashmap data struct and the fact that potentially all nodes will be there means memory complexity would be O(n) with time complexity being O(n) because we traverse all n nodes

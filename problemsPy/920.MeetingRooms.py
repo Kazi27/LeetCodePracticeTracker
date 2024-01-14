@@ -41,5 +41,6 @@ class Solution:
 
         return True #this is outside the loop so if you didnt execute false at all ur here meaning no conflicts so return true
     
-# Time Complexity:
+# Complexities:
 # The time complexity for sort is O(log n) and the for loop runs n times so its O(n log n)
+# The space complexity is O(1) because no data struct used, sorted is inplace and requires no extra memory and we are just accessing the intervals array

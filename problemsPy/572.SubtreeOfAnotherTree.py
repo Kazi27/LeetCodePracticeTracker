@@ -53,5 +53,6 @@ class Solution:
         
         return False #if ur here the trees exist but values do not match so return false
     
-# Time Complexity:
+# Complexities:
 # The time complexity would be O(S * T) which is the size of both trees multiplied together
+# The space complexity would be O(max(S, T)) which is basically the height of whichever tree is taller because the call stack increases each recursive call

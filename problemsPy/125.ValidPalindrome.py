@@ -46,5 +46,7 @@ class Solution2:
             return True
         return False #if ur here, its not a palindrome
     
-# Time Complexity: O(n) because we traverse through each character in string s, memory complexity is also O(n) because we use extra memory though when we create new string s and also when we reverse it
+# Complexities: 
+# Time complexity would be O(n) because we traverse through each character in string s
+# Memory and space complexity would also be O(n) because we use extra memory though when we create new string s and also when we reverse it
 # A solution with O(1) complexity would be to use two pointers left and right to make sure the characters stay equal till we meet in the middle

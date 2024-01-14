@@ -35,5 +35,6 @@ class Solution(object):
         return False  # If you reach here, s and t are not anagrams
         """
 
-# Time Complexity:
+# Complexities:
 # The time complexity for sorting is O(n log n), and then you're sorting both strings so O(n log n) twice which generalizes to O(n log n)
+# The space complexity is O(1) because sorting is done in place and we use the same amount of memory regardless of the size of s or t

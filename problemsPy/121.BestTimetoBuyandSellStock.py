@@ -61,5 +61,6 @@ class Solution2:
         
         return maxprofit            
     
-# Time Complexity:
-# O(n) because we just use two pointers to iterate through the list, updating the left (buy) when it's at the lowest and right (sell) when it's at the highest
+# Complexities:
+# Time complexity would be O(n) because we just use two pointers to iterate through the list, updating the left (buy) when it's at the lowest and right (sell) when it's at the highest
+# Space complexity would be O(1) because we are just accessing arrays, no data struct or dynamic mem allocation

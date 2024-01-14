@@ -38,5 +38,6 @@ class Solution:
             curr = next #move curr up cause remember u save curr.next each iterat
         return prev #at the end, head of ur new reversed list is prev
     
-# Time Complexity:
-# O(n) time complexity and memory complexity is O(1) because no data structures like stack or something, we are just manipulating pointers         
+# Complexities:
+# Time complexity would be O(n) because we are traversing through the whole list with next prev and curr
+# Memory complexity is O(1) because no data structures like stack or something, we are just manipulating pointers         

@@ -58,6 +58,7 @@ class Solution2:
               
               prevMap[n] = i #if ur here, diff is not in hashmap so u add it, value of n goes into key at i
 
-# Time Complexity:
-# We are guaranteeing that by the time we reach the second element in the pair (which matches the diff) that our pair is complete because the diff plus the index ur currently at gives you the target
-# So we just need O(n) time to accomplish this because we only iterate through the array once 
+# Complexities:
+# For time complexity, we are guaranteeing that by the time we reach the second element in the pair (which matches the diff) that our pair is complete because the diff plus the index ur currently at gives you the target
+# So we just need O(n) time to accomplish this because we only iterate through the array once. 
+# For space complexity you need O(n) space too because the hashmap size will be n key value pairs

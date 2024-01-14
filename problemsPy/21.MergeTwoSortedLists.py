@@ -47,5 +47,6 @@ class Solution:
 
         return dummy.next #dummy is the dumb first one so we dont want that, so we do dummy.next to get the rest of it except the first one 
     
-# Time Complexity:
-# O(n) because you are traversing both lists at the same time, space is O(1) because no extra memory is needed, you're just using pointers
+# Complexities:
+# Time complexity would be O(n) because you are traversing both lists at the same time
+# Space is O(1) because no extra memory is needed, you're just using pointers
