@@ -37,3 +37,6 @@ class Solution:
         if x and y == True: #if x and y are true, theyre the same tree
             return True
         return False  
+    
+# Time Complexity:
+# The time complexity would be the height of both trees added together so for us O(p + q) because worst case is we iterate through both tree nodes

@@ -52,3 +52,6 @@ class Solution:
                 return True
         
         return False #if ur here the trees exist but values do not match so return false
+    
+# Time Complexity:
+# The time complexity would be O(S * T) which is the size of both trees multiplied together

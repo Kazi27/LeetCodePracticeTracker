@@ -40,3 +40,6 @@ class Solution:
                 return False
 
         return True #this is outside the loop so if you didnt execute false at all ur here meaning no conflicts so return true
+    
+# Time Complexity:
+# The time complexity for sort is O(log n) and the for loop runs n times so its O(n log n)

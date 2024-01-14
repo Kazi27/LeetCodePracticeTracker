@@ -29,3 +29,6 @@ class Solution:
             two = temp
 
         return one
+    
+# Time Complexity:
+# Time complexity for this dynamic programming solution is O(n) because the for loop runs for n times
